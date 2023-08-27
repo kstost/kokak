@@ -1,1 +1,70 @@
-d
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/gh/kstost/PIXICS@a2bf3d7/loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/kstost/AudioManager/AudioManager.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/kstost/ksttool/Geometry.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"
+        integrity="sha512-bcfltY+lNLlNxz38yBBm/HLaUB1gTV6I0e+fahbF9pS6roIdzUytozWdnFV8ZnM6cSAG5EbmO0ag0a/fLZSG4Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        * {
+            -webkit-user-drag: none;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            touch-action: none;
+            box-sizing: border-box;
+            /* font-family: 'Jua', sans-serif; */
+            font-family: 'Spline Sans Mono', monospace;
+
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+            /* backdrop-filter: blur(4px); */
+
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0px;
+            background-color: rgb(48, 48, 48);
+            overflow: hidden;
+            display: grid;
+            place-items: center;
+        }
+
+        .scrollView,
+        .scrollView * {
+            touch-action: pan-y;
+            overflow: scroll;
+            color: red;
+        }
+
+        .justWindow,
+        .justWindow * {
+            touch-action: manipulation;
+            overflow: hidden;
+            color: black;
+        }
+        .scrollable * {
+            touch-action: pan-y;        /* 한 손가락 수직(Y축) 이동 제스처를 사용합니다. */
+            overflow: scroll;
+
+        }
+    </style>
+
+</head>
+
+<body>
+   <script src="./bundle.js"></script>
+</body>
+
+</html>
