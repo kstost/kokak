@@ -6,13 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="../PIXICS/loader.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/kstost/PIXICS@72f743d/loader.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/kstost/AudioManager/AudioManager.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/kstost/ksttool/Geometry.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"
-        integrity="sha512-bcfltY+lNLlNxz38yBBm/HLaUB1gTV6I0e+fahbF9pS6roIdzUytozWdnFV8ZnM6cSAG5EbmO0ag0a/fLZSG4Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <script src="./p5.min.js"></script>
     <style>
         * {
             -webkit-user-drag: none;
@@ -24,15 +20,11 @@
             user-select: none;
             touch-action: none;
             box-sizing: border-box;
-            /* font-family: 'Jua', sans-serif; */
             font-family: 'Spline Sans Mono', monospace;
-
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
-            /* backdrop-filter: blur(4px); */
-
-            scroll-behavior: smooth;
+            font-family: 'GmarketSansLight';
         }
+
         body {
             margin: 0px;
             background-color: rgb(0, 0, 0);
@@ -54,17 +46,17 @@
             overflow: hidden;
             color: black;
         }
-        .scrollable * {
-            touch-action: pan-y;        /* 한 손가락 수직(Y축) 이동 제스처를 사용합니다. */
-            overflow: scroll;
 
+        .scrollable * {
+            touch-action: pan-y;
+            overflow: scroll;
         }
     </style>
 
 </head>
 
 <body>
-   <script src="./bundle.js"></script>
+    <script type="module" src="./main.js"></script>
 </body>
 
 </html>
